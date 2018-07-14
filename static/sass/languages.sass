@@ -1,0 +1,189 @@
+// declaring variables
+$standard_font: 'Oxygen', sans-serif
+$font_title: 'Indie Flower', cursive
+$text_font: 'IBM Plex Serif', regular, serif
+$standard_em: 2em
+
+// COLOR SCHEME:
+// newbees blue default color
+$newbees_blue: #55c4f5
+$newbees_blue: rgb(85,196,245)
+$newbees_dark: #403D58
+$newbees_light: #F2EFEA
+
+
+/* Border box declaration */
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+/* navbar */
+.logo
+  color: #F2EFEA !important
+  margin-right: -5em
+  position: center
+  margin-right: 0em
+  padding:
+    right: 4em !important
+    left: 4em !important
+  font:
+    size: 1.3em
+    family: $standard_font
+
+// make element bigger when hovered
+a.logo
+  &:hover, &:active
+    color: #403D58 !important
+
+
+/* carousel slides */
+.slide
+  width: 70%
+  padding: 3em
+  display: block
+  margin:
+    left: auto
+    right: auto
+    top: 0.5em
+
+
+/* cards */
+.card-title
+  text-align: center
+
+.card
+  img
+    width: 100%
+    display: block
+    height: auto
+  margin: 2em
+  border-left: solid 1px lightgrey !important
+
+.card-deck
+  margin:
+    top: 3em
+    bottom: 5em
+  padding: 1em
+
+
+// title styling
+.title
+  text-align: center
+  font-family: $font_title
+  font-size: 4em
+
+.title1
+  @extend .title
+  margin-top: 1em
+
+.title2
+  @extend .title
+  margin-bottom: 2em
+  font-size: 3em
+
+.no-bottom-margin-title
+  margin-bottom: -0.7em
+
+.list_style
+  font:
+    style: $standard_font
+    size: 1em
+    margin-left: 45em
+    margin-right: 45%
+
+// Quiz
+
+.title1
+  margin-top: 1em
+  text-align: center
+  font:
+    family: $font_title
+    size: 3em
+
+.title2
+  text-align: center
+  font-family: $font_title
+  font-size: 2.5em
+
+// table for quiz
+table
+  border-collapse: collapse
+  width: 90%
+  margin:
+    left: 5%
+    right: 5%
+
+th, td
+  text-align: left
+  padding: 1em
+  padding:
+    right: standard_em
+    left: standard_em
+
+tr:nth-child(odd)
+  background-color: rgba(30, 144, 255,0.2)
+  //background-color: lighten(desaturate(DodgerBlue, 50%))
+
+.table_style
+  font:
+    family: text_font
+    size: 1.5em
+
+// nesting levels demonstrated
+.yes_no
+  \:hover
+    color: rgba(30,144,255,0.8)
+
+.button_space
+  margin-left: 2em
+
+// submit button
+.submit_button
+  font:
+    family: $standard_font
+    size: 1em
+  padding: 1em
+  color: DarkBlue
+  border-color: DarkBlue
+  background: linear-gradient(to bottom, rgba(30, 144, 255,0.2), snow)
+  margin:
+    top: $standard_em
+    right: 4em
+    bottom: $standard_em
+  float: right
+
+
+// media for card picture gallery
+// if the screen-width is less than 850px
+@media (max-width: 1250px)
+  .submit_button
+    float: left
+    margin-left: 3em
+  .title1
+    margin-top: 0em
+    font-size: 3em
+  .title2
+    font-size: 2.5em
+    margin-bottom: 2em
+
+@media (max-width: 880px)
+  .title1
+    margin-top: 1em
+    font-size: 2.3em
+    float: none
+    padding: 0em
+  .title2
+    font-size: 2em
+    margin-bottom: 2em
+
+@media (max-width: 470px)
+  .submit_button
+    margin:
+      top: $standard_em
+      left: 9em
+      bottom: $standard_em
+    float: left

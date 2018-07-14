@@ -1,0 +1,100 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* navbar */
+.logo {
+  margin-left: 0em !important;
+  color: #F2EFEA !important;
+  margin-right: -5em;
+  position: center;
+  margin-right: 0em;
+  padding-right: 4em !important;
+  padding-left: 4em !important;
+  font-size: 1.3em;
+  font-family: "Oxygen", sans-serif;
+}
+
+a.logo:hover, a.logo:active {
+  color: #403D58 !important;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* carousel slides */
+.slide {
+  width: 70%;
+  padding: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+
+.main_body {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+/* cards */
+.card img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+
+.card-deck {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  padding: 1em;
+}
+
+/* grid system */
+.col-sm > img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+.title1 {
+  margin-top: -1.5em;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.3em;
+  color: #55c4f5;
+  margin-bottom: 3em;
+}
+
+.title1 :hover {
+  color: purple;
+}
+
+h1, h2 {
+  color: grey;
+}
+
+h5 ~ p {
+  color: #403D58;
+}
+
+#with_bold {
+  text-align: center;
+  font-weight: bold;
+}

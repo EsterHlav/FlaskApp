@@ -1,0 +1,178 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* navbar */
+.logo {
+  color: #F2EFEA !important;
+  margin-right: -5em;
+  position: center;
+  margin-right: 0em;
+  padding-right: 4em !important;
+  padding-left: 4em !important;
+  font-size: 1.3em;
+  font-family: "Oxygen", sans-serif;
+}
+
+a.logo:hover, a.logo:active {
+  color: #403D58 !important;
+}
+
+/* carousel slides */
+.slide {
+  width: 70%;
+  padding: 3em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+}
+
+/* cards */
+.card-title {
+  text-align: center;
+}
+
+.card {
+  margin: 2em;
+  border-left: solid 1px lightgrey !important;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.card-deck {
+  margin-top: 3em;
+  margin-bottom: 5em;
+  padding: 1em;
+}
+
+.title, .title1, .title2 {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 4em;
+}
+
+.title1 {
+  margin-top: 1em;
+}
+
+.title2 {
+  margin-bottom: 2em;
+  font-size: 3em;
+}
+
+.no-bottom-margin-title {
+  margin-bottom: -0.7em;
+}
+
+.list_style {
+  font-style: "Oxygen", sans-serif;
+  font-size: 1em;
+  font-margin-left: 45em;
+  font-margin-right: 45%;
+}
+
+.title1 {
+  margin-top: 1em;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 3em;
+}
+
+.title2 {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+th, td {
+  text-align: left;
+  padding: 1em;
+  padding-right: standard_em;
+  padding-left: standard_em;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(30, 144, 255, 0.2);
+}
+
+.table_style {
+  font-family: text_font;
+  font-size: 1.5em;
+}
+
+.yes_no :hover {
+  color: rgba(30, 144, 255, 0.8);
+}
+
+.button_space {
+  margin-left: 2em;
+}
+
+.submit_button {
+  font-family: "Oxygen", sans-serif;
+  font-size: 1em;
+  padding: 1em;
+  color: DarkBlue;
+  border-color: DarkBlue;
+  background: linear-gradient(to bottom, rgba(30, 144, 255, 0.2), snow);
+  margin-top: 2em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+  float: right;
+}
+
+@media (max-width: 1250px) {
+  .submit_button {
+    float: left;
+    margin-left: 3em;
+  }
+  .title1 {
+    margin-top: 0em;
+    font-size: 3em;
+  }
+  .title2 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 880px) {
+  .title1 {
+    margin-top: 1em;
+    font-size: 2.3em;
+    float: none;
+    padding: 0em;
+  }
+  .title2 {
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 470px) {
+  .submit_button {
+    margin-top: 2em;
+    margin-left: 9em;
+    margin-bottom: 2em;
+    float: left;
+  }
+}
