@@ -1,11 +1,9 @@
-# Project 1
+# Harvard Project 
 
 ### Web Programming with Python and JavaScript
 
 
-My application for project 1 is again included within the design famework of newbeeslearn.com, even tho the content not directly relevant for the assignment (it just fitted well because of newbeeslearn.com, I will be implementing a log in as well).
-
-In the navbar, I impemented all the options for user - login, registration and log out.
+Navbar includes all the options for user - login, registration and log out.
 When the user logs in, he gets to a welcome page that displays his username and then a search bar where he can input the city or a zipcode for his info search.
 
 models.py  --> create the databases schema necessary to interact with our 3 databases
